@@ -107,11 +107,11 @@ author:
   bio              : "**하루하루 열심히 노력하기**
                      <br>사진과 코딩, 클라우드를 좋아하는 개발자"
   location         : "Republic of Korea"
-  email            : 
+  email            : dlaghtjd4487@naver.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:dlaghtjd4487@naver.com
+      url: "mailto:dlaghtjd4487@naver.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/IMHOSUNG"
