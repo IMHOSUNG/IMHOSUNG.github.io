@@ -15,7 +15,7 @@ toc_label: "목차"
 categories:
   - OS
 tags: 
-  - OS, Process
+  - OS, Process, Test
 
 # Time
 read_time: true
