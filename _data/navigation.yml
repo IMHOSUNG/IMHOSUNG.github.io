@@ -2,9 +2,11 @@
 main:
   #- title: "Home"
   #  url: "/"
-  - title: "Category"
+  - title: "CATEGORYS"
     url: "/categories/"
-  - title: "Tags"
+  - title: "TAGS"
     url: /tags/
-  - title: "Introduce"
+  - title: "INTRODUCE"
     url: /about/
+  - title: "TODO"
+    url : /todo/
