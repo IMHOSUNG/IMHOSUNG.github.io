@@ -1,9 +1,9 @@
 ---
 # page
-title: "[OS#1] 프로세스 개념 정리"
-excerpt: "컴퓨터를 이해해보기 - OS편"
+title: "[PYTHON] 1. 파이썬 자료구조 정리 "
+excerpt: "주특기 언어 만들기 - PYTHON"
 layout : single
-published: false
+published: true
 # classes: wide
 
 # toc
@@ -13,51 +13,46 @@ toc_label: "목차"
 
 # category & tag
 categories:
-  - OS
+  - language
 tags: 
-  - OS, Process, Test
+  - Python
 
 # Time
 read_time: true
-date: 2021-11-08 
-last_modified_at: 2021-11-08 
+date: 2021-11-12 
+last_modified_at: 2021-11-12 
 ---
 
 ## :fire: 목표
-> **1. 프로세스의 구성을 이해한다.**  
+> **1.PYTHON의 자료구조의 종류와 사용 방법을 정리한다.**  
 
-## :speech_balloon: 1. 프로세스의 구성
+## :speech_balloon: 1. 리스트(스택,큐)  
+### - 리스트  
+  + list.append(x)  
+    + 리스트 끝에 x 값 추가   
+    + a[len(a):]=[x]와 동등한 내용   
+  + list.extend(iterable)  
+    + 리스트 끝에 이터러블의 항목을 덧붙여서 확장   
+    + a[len(a):]=iterable  
+  + list.insert(i,x)  
+    + 주어진 위치 i에 x 항목을 삽입 
+    + a.insert(0,x)는 리스트 첫 번째에 x 값 삽입 )  
+    + a.insert(len(a), )
 
-컴퓨터에서 일어나는 작업들을 이해하기 위해서는 프로세스에 대한 이해가 필요하다.  
-우선 일반적인 전체 구조도 및 프로세스의 정의는 아래와 같다.
+## :speech_balloon: 2. 튜플,시퀀스
 
-![프로세스](https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Concepts-_Program_vs._Process_vs._Thread.jpg/1280px-Concepts-_Program_vs._Process_vs._Thread.jpg)
+## :speech_balloon: 3. 집합
 
-> **프로세스는 컴퓨터의 메모리에서 실행 중에 있는 프로그램을 의미한다.**   
-> **스케줄링의 TASK와 같은 의미로 쓰인다.**
-
-**프로세스 구성**  
-
-프로세스는 Code, Data, Heap, 메인스레드, 메인스레드 안에 Stack으로 이루어져 있다. (스레드는 나중에!)
-
-| 항목 | 설명 |
-| ------        | ----------- |
-| Code          | 소스코드로 이루어진 프로그램을 구동하기 위해 소스코드를 저장해놓는 영역 |
-| Data          | 전역 변수, 정적 변수, 배열 등과 관련된 데이터를 저장해놓는 영역 |
-| Heap          | 동적 할당(new, malloc) 된 정보들이 저장하는 영역 |
-| 메인스레드     | 기본적으로 프로세스는 최소 1개의 스레드(메인스레드)를 통해 프로세스 실행 |
-| Stack         | 스레드 안에 위치, 지역 변수, 매개 변수, 함수, 함수 리턴 값 등 임시 메모리 영역 |
-
-※ 여담이지만 Docker 컨테이너도 리눅스 프로세스와 chroot 기반으로 동작한다고 한다. [참고자료](https://www.44bits.io/ko/post/change-root-directory-by-using-chroot)
-
+## :speech_balloon: 3. 딕셔너리
 
 ## :memo: 결론
 
-> **프로세스 구성 : CODE, DATA, HEAP, 메인스레드, STACK**  
-> **프로세스 라이프사이클 : 생성, 실행, 준비, 대기, 종료**  
-> **프로세스 간 통신 방법 : 공유 메모리, 메시지 패싱**  
+> 1.
 
 ## :question: 추후 공부할 것
+
+## :link: 참고자료
+ 1. [파이썬 공식 문서](https://docs.python.org/ko/3/tutorial/datastructures.html#)
 
 
 
